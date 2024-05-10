@@ -1,5 +1,6 @@
-#include <bits/stdc++.h>
-
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 #include <time.h>
 #define STATION_NUM 10000
 
