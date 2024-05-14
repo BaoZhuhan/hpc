@@ -12,3 +12,4 @@ def generate_data(num_stations, num_records, filename, seed=42):
                 file.write(f"{station}, {temperature:.1f}\n")
 
 generate_data(10000, 1000, 'weather_data.csv')
+#一个数据站1000个数据，共10000个数据

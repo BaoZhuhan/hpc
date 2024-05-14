@@ -60,12 +60,12 @@ void load_data(const char *filename, Station stations[], int *num_stations)
 
         if (!found)
         {
-            (*num_stations)++;
             strcpy(stations[*num_stations].name, station_name);
             stations[*num_stations].min_temp = temperature;
             stations[*num_stations].max_temp = temperature;
             stations[*num_stations].sum_temp = temperature;
             stations[*num_stations].count = 1; 
+            (*num_stations)++;
         }
     }
 
@@ -91,7 +91,7 @@ int main()
     struct timespec start, end;
     clock_gettime(CLOCK_MONOTONIC, &start);
 
-    load_data("weather_data.csv", stations, &num_stations);
+    load_data("weather_data_test.csv", stations, &num_stations);
 
     clock_gettime(CLOCK_MONOTONIC, &end);
     double elapsed_time = (end.tv_sec - start.tv_sec) + (end.tv_nsec - start.tv_nsec) / 1E9;
