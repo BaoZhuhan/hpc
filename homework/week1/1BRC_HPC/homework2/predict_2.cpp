@@ -20,7 +20,7 @@ typedef struct
 /*比较函数*/
 bool compare(Station a , Station b)
 {
-    return a.name > b.name;
+    return a.name < b.name;
 }
 
 /*加载数据*/
