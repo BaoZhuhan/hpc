@@ -1,1 +1,0 @@
-{"name":"Local: 1","url":"d:\\Project\\hpc\\hpc\\docs_offical\\1.c","tests":[{"id":1720943255361,"input":"6\n4 3 0 5 1 2","output":"0 0 0 3 1 2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Project\\hpc\\hpc\\docs_offical\\1.c","group":"local","local":true}
